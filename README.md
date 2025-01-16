@@ -1,6 +1,8 @@
 # Access Management Microservice
 
-Este microservicio es responsable de manejar la autenticación y el acceso de usuarios en el sistema. Proporciona un endpoint HTTP para login, y utiliza RabbitMQ para escuchar colas relacionadas con eventos de acceso, como es crear un usuario o actualizar contraseña en Users Microservice Management.
+Este microservicio foma parte del Taller 2 de la asignatura de Arquitectura de Sistemas y es responsable de manejar la autenticación y el acceso de usuarios en el sistema. Proporciona un endpoint HTTP para login, y utiliza RabbitMQ para escuchar colas relacionadas con eventos de acceso, como es crear un usuario o actualizar contraseña en Users Microservice Management.
+
+Además de este microservicio se tienen 2 más, Ususarios y Carreras.
 
 ## Características  
 - Gestión de usuarios: Login.  
@@ -13,9 +15,9 @@ Este microservicio es responsable de manejar la autenticación y el acceso de us
 
 Asegúrate de tener instalado lo siguiente:
 
-- **Node.js** (se recomienda la versión 14 o superior).
+- **Node.js** (se recomienda la versión 20 o superior).
 - **npm** (Administrador de paquetes de Node, incluido con Node.js).
-- **Docker** (Levantar las bases de datos)
+- **Docker** (Levantar las bases de datos mediante un docekr compose)
 ## Endpoints HTTP  
 
 ### **Base URL**: `/api/access`  
@@ -36,9 +38,9 @@ Asegúrate de tener instalado lo siguiente:
 ### 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/naatox/access_microservice.git
 
-cd tu-repositorio
+cd access_microservice
 
 npm install
 
